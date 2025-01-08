@@ -1,0 +1,284 @@
+it
+l1f21bsse0470@UCP-LBA-206B-01 MINGW64 ~/Desktop/practice
+$ git clone https://github.com/Khan8312/week12cpractice.git
+Cloning into 'week12cpractice'...
+warning: You appear to have cloned an empty repository.
+
+l1f21bsse0470@UCP-LBA-206B-01 MINGW64 ~/Desktop/practice
+$ cd week12cpractice
+
+l1f21bsse0470@UCP-LBA-206B-01 MINGW64 ~/Desktop/practice/week12cpractice (main)
+$ git branch -m main
+
+l1f21bsse0470@UCP-LBA-206B-01 MINGW64 ~/Desktop/practice/week12cpractice (main)
+$ git config --local user.name "khan"
+
+l1f21bsse0470@UCP-LBA-206B-01 MINGW64 ~/Desktop/practice/week12cpractice (main)
+$ git config --local user.email "khan@gmail"
+
+l1f21bsse0470@UCP-LBA-206B-01 MINGW64 ~/Desktop/practice/week12cpractice (main)
+$ touch .gitignore
+
+l1f21bsse0470@UCP-LBA-206B-01 MINGW64 ~/Desktop/practice/week12cpractice (main)
+$ notpad .gitignore
+bash: notpad: command not found
+
+l1f21bsse0470@UCP-LBA-206B-01 MINGW64 ~/Desktop/practice/week12cpractice (main)
+$ git config --local core.editor notepad
+
+l1f21bsse0470@UCP-LBA-206B-01 MINGW64 ~/Desktop/practice/week12cpractice (main)
+$ notpad .gitignore
+bash: notpad: command not found
+
+l1f21bsse0470@UCP-LBA-206B-01 MINGW64 ~/Desktop/practice/week12cpractice (main)
+$ notepad .gitignore
+
+l1f21bsse0470@UCP-LBA-206B-01 MINGW64 ~/Desktop/practice/week12cpractice (main)
+$ npm init -y
+Wrote to C:\Users\TEMP.UCP.000\Desktop\practice\week12cpractice\package.json:
+
+{
+  "name": "week12cpractice",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}
+
+
+
+
+l1f21bsse0470@UCP-LBA-206B-01 MINGW64 ~/Desktop/practice/week12cpractice (main)
+$ notepad packet.json
+
+l1f21bsse0470@UCP-LBA-206B-01 MINGW64 ~/Desktop/practice/week12cpractice (main)
+$ npm init -y
+Wrote to C:\Users\TEMP.UCP.000\Desktop\practice\week12cpractice\package.json:
+
+{
+  "name": "week12cpractice",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}
+
+
+
+
+l1f21bsse0470@UCP-LBA-206B-01 MINGW64 ~/Desktop/practice/week12cpractice (main)
+$ notepad packet.json
+
+l1f21bsse0470@UCP-LBA-206B-01 MINGW64 ~/Desktop/practice/week12cpractice (main)
+$ notepad package.json
+
+l1f21bsse0470@UCP-LBA-206B-01 MINGW64 ~/Desktop/practice/week12cpractice (main)
+$ git add .
+warning: in the working copy of 'package.json', LF will be replaced by CRLF the next time Git touches it
+
+l1f21bsse0470@UCP-LBA-206B-01 MINGW64 ~/Desktop/practice/week12cpractice (main)
+$ git commit -m "initial commit"
+[main (root-commit) 0c1947e] initial commit
+ 3 files changed, 13 insertions(+)
+ create mode 100644 .gitignore
+ create mode 100644 package.json
+ create mode 100644 packet.json
+
+l1f21bsse0470@UCP-LBA-206B-01 MINGW64 ~/Desktop/practice/week12cpractice (main)
+$ git push origin develop
+error: src refspec develop does not match any
+error: failed to push some refs to 'https://github.com/Khan8312/week12cpractice.git'
+
+l1f21bsse0470@UCP-LBA-206B-01 MINGW64 ~/Desktop/practice/week12cpractice (main)
+$ git remote
+origin
+
+l1f21bsse0470@UCP-LBA-206B-01 MINGW64 ~/Desktop/practice/week12cpractice (main)
+$ git branch -m develop
+
+l1f21bsse0470@UCP-LBA-206B-01 MINGW64 ~/Desktop/practice/week12cpractice (develop)
+$ git push origin develop
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (5/5), 452 bytes | 452.00 KiB/s, done.
+Total 5 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+To https://github.com/Khan8312/week12cpractice.git
+ * [new branch]      develop -> develop
+
+l1f21bsse0470@UCP-LBA-206B-01 MINGW64 ~/Desktop/practice/week12cpractice (develop)
+$ git branch feature/linting-wf
+
+l1f21bsse0470@UCP-LBA-206B-01 MINGW64 ~/Desktop/practice/week12cpractice (develop)
+$ git switch feature/linting-wf
+Switched to branch 'feature/linting-wf'
+
+l1f21bsse0470@UCP-LBA-206B-01 MINGW64 ~/Desktop/practice/week12cpractice (feature/linting-wf)
+$ mkdir -p ./github/.workflows
+
+l1f21bsse0470@UCP-LBA-206B-01 MINGW64 ~/Desktop/practice/week12cpractice (feature/linting-wf)
+$ ouch
+bash: ouch: command not found
+
+l1f21bsse0470@UCP-LBA-206B-01 MINGW64 ~/Desktop/practice/week12cpractice (feature/linting-wf)
+$ touch ./github/.workflows/lint.yaml
+
+l1f21bsse0470@UCP-LBA-206B-01 MINGW64 ~/Desktop/practice/week12cpractice (feature/linting-wf)
+$ code .
+Run with 'code -' to read output from another program (e.g. 'echo Hello World | code -').
+
+l1f21bsse0470@UCP-LBA-206B-01 MINGW64 ~/Desktop/practice/week12cpractice (feature/linting-wf)
+$ touch .htmlhintrc.json .stylelintrc.json
+
+l1f21bsse0470@UCP-LBA-206B-01 MINGW64 ~/Desktop/practice/week12cpractice (feature/linting-wf)
+$ git status
+On branch feature/linting-wf
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        .htmlhintrc.json
+        .stylelintrc.json
+        github/
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+l1f21bsse0470@UCP-LBA-206B-01 MINGW64 ~/Desktop/practice/week12cpractice (feature/linting-wf)
+$ git add .
+
+l1f21bsse0470@UCP-LBA-206B-01 MINGW64 ~/Desktop/practice/week12cpractice (feature/linting-wf)
+$ git commit -m "add wf and config files"
+[feature/linting-wf 7a9aff5] add wf and config files
+ 3 files changed, 31 insertions(+)
+ create mode 100644 .htmlhintrc.json
+ create mode 100644 .stylelintrc.json
+ create mode 100644 github/.workflows/lint.yaml
+
+l1f21bsse0470@UCP-LBA-206B-01 MINGW64 ~/Desktop/practice/week12cpractice (feature/linting-wf)
+$ git push origin feature/linting-wf
+Enumerating objects: 7, done.
+Counting objects: 100% (7/7), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (6/6), 780 bytes | 780.00 KiB/s, done.
+Total 6 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+remote:
+remote: Create a pull request for 'feature/linting-wf' on GitHub by visiting:
+remote:      https://github.com/Khan8312/week12cpractice/pull/new/feature/linting-wf
+remote:
+To https://github.com/Khan8312/week12cpractice.git
+ * [new branch]      feature/linting-wf -> feature/linting-wf
+
+l1f21bsse0470@UCP-LBA-206B-01 MINGW64 ~/Desktop/practice/week12cpractice (feature/linting-wf)
+$ git add .
+
+l1f21bsse0470@UCP-LBA-206B-01 MINGW64 ~/Desktop/practice/week12cpractice (feature/linting-wf)
+$ git commit -m "add wf and config files updated"
+[feature/linting-wf 05c85cd] add wf and config files updated
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+
+l1f21bsse0470@UCP-LBA-206B-01 MINGW64 ~/Desktop/practice/week12cpractice (feature/linting-wf)
+$ git push origin feature/linting-wf
+Enumerating objects: 9, done.
+Counting objects: 100% (9/9), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (5/5), 409 bytes | 409.00 KiB/s, done.
+Total 5 (delta 2), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+To https://github.com/Khan8312/week12cpractice.git
+   7a9aff5..05c85cd  feature/linting-wf -> feature/linting-wf
+
+l1f21bsse0470@UCP-LBA-206B-01 MINGW64 ~/Desktop/practice/week12cpractice (feature/linting-wf)
+$ git switch develop
+Switched to branch 'develop'
+Your branch is based on 'origin/main', but the upstream is gone.
+  (use "git branch --unset-upstream" to fixup)
+
+l1f21bsse0470@UCP-LBA-206B-01 MINGW64 ~/Desktop/practice/week12cpractice (develop)
+$ git pull origin develop
+remote: Enumerating objects: 2, done.
+remote: Counting objects: 100% (2/2), done.
+remote: Compressing objects: 100% (2/2), done.
+remote: Total 2 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+Unpacking objects: 100% (2/2), 1.77 KiB | 39.00 KiB/s, done.
+From https://github.com/Khan8312/week12cpractice
+ * branch            develop    -> FETCH_HEAD
+   0c1947e..a60b521  develop    -> origin/develop
+Updating 0c1947e..a60b521
+Fast-forward
+ .htmlhintrc.json            |  4 ++++
+ .stylelintrc.json           |  0
+ github/.workflows/lint.yaml | 27 +++++++++++++++++++++++++++
+ 3 files changed, 31 insertions(+)
+ create mode 100644 .htmlhintrc.json
+ create mode 100644 .stylelintrc.json
+ create mode 100644 github/.workflows/lint.yaml
+
+l1f21bsse0470@UCP-LBA-206B-01 MINGW64 ~/Desktop/practice/week12cpractice (develop)
+$ touch index.html styles.css
+
+l1f21bsse0470@UCP-LBA-206B-01 MINGW64 ~/Desktop/practice/week12cpractice (develop)
+$ git branch feature/f1
+
+l1f21bsse0470@UCP-LBA-206B-01 MINGW64 ~/Desktop/practice/week12cpractice (develop)
+$ git branch -d index.html style.html
+error: branch 'index.html' not found
+error: branch 'style.html' not found
+
+l1f21bsse0470@UCP-LBA-206B-01 MINGW64 ~/Desktop/practice/week12cpractice (develop)
+$ git switch feature/f1
+Switched to branch 'feature/f1'
+M       .htmlhintrc.json
+M       .stylelintrc.json
+
+l1f21bsse0470@UCP-LBA-206B-01 MINGW64 ~/Desktop/practice/week12cpractice (feature/f1)
+$ touch index.html styles.css
+
+l1f21bsse0470@UCP-LBA-206B-01 MINGW64 ~/Desktop/practice/week12cpractice (feature/f1)
+$  code .
+
+l1f21bsse0470@UCP-LBA-206B-01 MINGW64 ~/Desktop/practice/week12cpractice (feature/f1)
+$ git add .
+
+l1f21bsse0470@UCP-LBA-206B-01 MINGW64 ~/Desktop/practice/week12cpractice (feature/f1)
+$ git commit -m " html and css files added"^C
+
+l1f21bsse0470@UCP-LBA-206B-01 MINGW64 ~/Desktop/practice/week12cpractice (feature/f1)
+$ git add .
+
+l1f21bsse0470@UCP-LBA-206B-01 MINGW64 ~/Desktop/practice/week12cpractice (feature/f1)
+$ ^[[200~ git commit -m " html and css files added"
+bash: $'\E[200~': command not found
+
+l1f21bsse0470@UCP-LBA-206B-01 MINGW64 ~/Desktop/practice/week12cpractice (feature/f1)
+$ git commit -m " html and css files added"
+[feature/f1 4147c39]  html and css files added
+ 5 files changed, 24 insertions(+), 3 deletions(-)
+ create mode 100644 index.html
+ create mode 100644 styles.css
+
+l1f21bsse0470@UCP-LBA-206B-01 MINGW64 ~/Desktop/practice/week12cpractice (feature/f1)
+$ git push origin feature/f1
+Enumerating objects: 15, done.
+Counting objects: 100% (15/15), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (5/5), done.
+Writing objects: 100% (9/9), 921 bytes | 460.00 KiB/s, done.
+Total 9 (delta 1), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+remote:
+remote: Create a pull request for 'feature/f1' on GitHub by visiting:
+remote:      https://github.com/Khan8312/week12cpractice/pull/new/feature/f1
+remote:
+To https://github.com/Khan8312/week12cpractice.git
+ * [new branch]      feature/f1 -> feature/f1
